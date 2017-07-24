@@ -42,12 +42,8 @@ module.exports = function (wallaby) {
                   defaultJSExtensions: true,
                   packages: {
                       app: {
-                          // for inline errors
-                          meta: {
-                              '*': {
-                                  scriptLoad: true
-                              }
-                          }
+                          defaultExtension: 'js',
+                          format: 'cjs'
                       },
                       rxjs: {
                           defaultExtension: 'js'
